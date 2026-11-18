@@ -1,1 +1,19 @@
+<div class="card">
+<h2>5. Lesson 2 - How To Collect Data</h2>
+<p>Collecting data is just writing down what you see!</p>
+<p><b>Step 1 - Ask a Question:</b> e.g. What is the favourite food in Ruiru?</p>
+<p><b>Step 2 - Ask 5 People:</b> Write their answers in a notebook.</p>
+<p><b>Step 3 - Count:</b> Chapati = 3, Rice = 1, Ugali = 1</p>
+<p><b>Step 4 - Decide:</b> Most people love Chapati! So if you open a food stall, sell Chapati!</p>
+<p><b>Your Task Today:</b> Ask 3 friends: What is your favourite colour? Write it down. You just collected data!</p>
+<button onclick="alert('Great job! You are now a Data Collector!')">I Collected Data!</button>
+</div>
 
+<div class="card">
+<h2>6. Data in Real Life in Kenya</h2>
+<p>📱 M-PESA uses data to keep your money safe.</p>
+<p>🚌 Matatu apps use data to know traffic.</p>
+<p>🌦️ Weather apps use data to tell farmers when it will rain.</p>
+<p>🛒 Shops in Ruiru use data to know what to stock.</p>
+<p><b>Data is everywhere!</b></p>
+</div>
