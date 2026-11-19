@@ -1,1 +1,27 @@
 
+<div class="box">
+<h2>🧾 MY RECEIPT LABELLING TOOL - REAL JOB TOOL</h2>
+<p>Use this to label ANY receipt!</p>
+Shop Name: <input type="text" id="shop" placeholder="e.g. Naivas"><br><br>
+Date: <input type="text" id="date" placeholder="e.g. 19 Nov 2026"><br><br>
+Total Amount: <input type="number" id="total" placeholder="e.g. 1250"><br><br>
+Payment: 
+<select id="pay">
+<option>Cash</option>
+<option>M-Pesa</option>
+<option>Card</option>
+</select><br><br>
+<button class="green" onclick="showResult()">LABEL THIS RECEIPT</button>
+<br><br>
+<p id="result"></p>
+</div>
+
+<script>
+function showResult(){
+let s = document.getElementById('shop').value;
+let d = document.getElementById('date').value;
+let t = document.getElementById('total').value;
+let p = document.getElementById('pay').value;
+document.getElementById('result').innerHTML = "✅ LABELLED! Shop: " + s + " | Date: " + d + " | Total: " + t + " | Payment: " + p + " - READY TO SEND TO BOSS!";
+}
+</script>
