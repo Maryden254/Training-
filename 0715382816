@@ -1,0 +1,58 @@
+<div class="box">
+<h2>💇🏾‍♀️ BOOK YOUR APPOINTMENT - MARY'S SALON</h2>
+<p>Book in 30 seconds! No calling needed!</p>
+
+Your Name: <br>
+<input type="text" id="name" placeholder="e.g. Mary Wanjiku"><br><br>
+
+Your Phone: <br>
+<input type="text" id="phone" placeholder="e.g. 0712345678"><br><br>
+
+Choose Hairstyle: <br>
+<select id="style">
+<option>Knotless Braids - 1,500 KES</option>
+<option>Box Braids - 1,200 KES</option>
+<option>Stitch Lines - 1,000 KES</option>
+<option>Natural Treatment - 800 KES</option>
+<option>Manicure + Pedicure - 700 KES</option>
+<option>Weave Installation - 2,000 KES</option>
+</select><br><br>
+
+Choose Date: <br>
+<input type="date" id="date"><br><br>
+
+Choose Time: <br>
+<select id="time">
+<option>9:00 AM</option>
+<option>11:00 AM</option>
+<option>1:00 PM</option>
+<option>3:00 PM</option>
+<option>5:00 PM</option>
+</select><br><br>
+
+<button class="green" onclick="bookNow()">BOOK NOW ON WHATSAPP 📲</button>
+<br><br>
+<p id="bookingResult"></p>
+</div>
+
+<script>
+function bookNow(){
+let n = document.getElementById('name').value;
+let p = document.getElementById('phone').value;
+let s = document.getElementById('style').value;
+let d = document.getElementById('date').value;
+let t = document.getElementById('time').value;
+
+if(n == "" || p == "" || d == ""){
+document.getElementById('bookingResult').innerHTML = "⚠️ Please fill Name, Phone and Date first!";
+return;
+}
+
+let message = "Hello Mary! I want to book: " + s + " on " + d + " at " + t + ". My name is " + n + ", my number is " + p;
+
+document.getElementById('bookingResult').innerHTML = "✅ Perfect " + n + "! You booked <b>" + s + "</b> on <b>" + d + " at " + t + "</b>. Press the green button again to send on WhatsApp!";
+ /whatsappNumber = "254715382816"; 
+let link = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+window.open(link, '_blank');
+}
+</script>
