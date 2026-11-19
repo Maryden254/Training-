@@ -6,7 +6,7 @@ Your Name: <br>
 <input type="text" id="name" placeholder="e.g. Mary Wanjiku"><br><br>
 
 Your Phone: <br>
-<input type="text" id="phone" placeholder="e.g. 0712345678"><br><br>
+<input type="text" id="phone" placeholder="e.g. 0715382816"><br><br>
 
 Choose Hairstyle: <br>
 <select id="style">
